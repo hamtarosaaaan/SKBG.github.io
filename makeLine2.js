@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { LineMaterial } from "/three.js/examples/jsm/lines/LineMaterial.js";
 import { Line2 } from "/three.js/examples/jsm/lines/Line2.js";
 import { LineGeometry } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/LineGeometry.js";
-import { OrbitControls } from 'https://unpkg.com/three@0.119.1/examples/jsm/controls/OrbitControls.js';
+// import { OrbitControls } from 'https://unpkg.com/three@0.119.1/examples/jsm/controls/OrbitControls.js';
 
 export function makeLine2(points){
   var egom = new THREE.BufferGeometry().setFromPoints(points);

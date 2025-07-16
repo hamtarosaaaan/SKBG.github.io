@@ -4,8 +4,8 @@
 
   import { makeLine2 } from "./makeLine2.js";
   import { LineMaterial } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/LineMaterial.js";
-  import { Line2 } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/Line2.js";
-  import { LineGeometry } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/LineGeometry.js";
+  // import { Line2 } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/Line2.js";
+  // import { LineGeometry } from "https://unpkg.com/three@0.119.1/examples/jsm/lines/LineGeometry.js";
   import { OrbitControls } from 'https://unpkg.com/three@0.119.1/examples/jsm/controls/OrbitControls.js';
 
     // サイズを指定
