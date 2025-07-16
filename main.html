@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sanmai Kumite Box Generater</title>
+    <script type="importmap" >
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js"
+        }
+      }
+    </script>
+    <!-- type="module" は必須らしい -->
+    <script  type="module" src='main.js'></script>    
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="setBoxSize">
+      <canvas id="myCanvas"></canvas>
+      <br>
+      <input type="range" id="ticknessSize" min="0.5" max="8" step="0.5" value="3">
+      <label>tickness = </label>
+      <input type="number" id="ticknessValue" value="3" style="width: 84px" step="0.1"></input>mm
+      <br>
+
+      <input type="range" id="boxSizeX" min="10" max="400" step="0.1" value="100">
+      <label>box Size X = </label>
+      <input type="number" id="boxSizeXValue" value="100" style="width: 70px" step="0.1"></input>mm
+      <br>
+      <input type="range" id="boxSizeY" min="10" max="400" step="0.1" value="100">
+      <label>box Size Y = </label>
+      <input type="number" id="boxSizeYValue" value="100" style="width: 70px" step="0.1"></input>mm
+      <br>
+      <input type="range" id="boxSizeZ" min="10" max="400" step="0.1" value="100">
+      <label>box Size Z = </label>
+      <input type="number" id="boxSizeZValue" value="100" style="width: 70px" step="0.1"></input>mm
+      <br>
+      <input type="range" id="kagiSize" min="0.5" max="200" step="0.5" value="30">
+      <label>kagi Size = </label>
+      <input type="number" id="kagiValue" value="30" style="width: 84px" step="0.1"></input>mm
+      <br>
+      <input type="range" id="kirikakiSize" min="0" max="1" step="0.05" value="0">
+      <label>kirikaki = </label>
+      <input type="number" id="kirikakiValue" value="0" style="width: 84px" step="0.05"></input>mm
+    <div>
+      <input type="button" value="download SVG" id = "download_button">
+    </div>
+    </div>
+    
+  </body>
+</html>
