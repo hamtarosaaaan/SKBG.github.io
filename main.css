@@ -1,5 +1,60 @@
 .setBoxSize {
   margin: 0 auto;
   text-align:center;
-
 }
+
+.setBoxSize p{
+  color: red;
+}
+
+.info{
+  
+  text-align:center;
+  width: 900px;
+  position: relative;
+  padding: 0.25em 1em;
+  margin: 15px auto;
+  top: 0;
+  background: #efefef;
+}
+
+@media (max-width: 900px){
+  .info{
+    text-align:center;
+    width: 100%;
+    position: relative;
+    padding: 0.25em 1em;
+    margin: 0 auto;
+    top: 0;
+    background: #efefef;
+  }
+}
+
+
+
+.info:before, .info:after{ 
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 10px;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.info:before{
+  border-left: dotted 2px #15adc1;
+  border-top: dotted 2px #15adc1;
+  border-bottom: dotted 2px #15adc1;
+  left: 0;
+}
+.info:after{
+  border-top: dotted 2px #15adc1;
+  border-right: dotted 2px #15adc1;
+  border-bottom: dotted 2px #15adc1;
+  right: 0;
+}
+.info p {
+  margin: 0; 
+  padding: 0;
+}
+
